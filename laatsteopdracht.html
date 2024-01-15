@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name This Cat or Dog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #app {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 400px;
+      height: 400px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Name This Cat or Dog</h1>
+    <router-link to="/cats">
+      <button>Cat</button>
+    </router-link>
+    <router-link to="/dogs">
+      <button>Dog</button>
+    </router-link>
+    <router-view></router-view>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue-router@4.2.2/dist/vue-router.global.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
